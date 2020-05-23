@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<a href="https://kauth.kakao.com/oauth/authorize?client_id=0274a24d1bb2fdfd9dbb9a2c659150af&redirect_uri=http://localhost:8080/oauth/kakao/redirect_kakao&response_type=code">
+    <img src="/images/kakao_login_btn.png">
+</a>
+<a href="https://nid.naver.com/oauth2.0/authorize?response_type=code&client_id=a3GDL_8xKua76zNi1pOl&redirect_uri=http://localhost:8080/redirect_naver&response_type=code&state=123">
+    <img src="/images/naver_login_btn.png">
+</a>
+
+<form action="/home/login" name="loginForm" method="post">
+    <input type="text" name="email"/>
+    <br/>
+    <input type="password" name="password"/>
+    <input type="submit" value="submit">
+</form>
+<button  onclick="location.href='/joinForm'">회원가입</button>
+</body>
+</html>

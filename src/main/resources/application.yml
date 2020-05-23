@@ -1,0 +1,21 @@
+spring:
+  profiles:
+    active: dev
+
+
+  thymeleaf:
+    cache: false
+    suffix: .html
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/hello?useSSL=false&characterEncoding=UTF-8&serverTimezone=UTC&allowPublicKeyRetrieval=true&useSSL=false
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: wally
+    password: password
+
+  jpa:
+    show-sql: true
+    generate-ddl: true
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    hibernate.ddl-auto: create
+
